@@ -1,17 +1,31 @@
-## Getting Started
+## Ecommerce Order App
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Overview
+**Ecommerce Order App** 
+This is an Order Management System built in the form of a Command Line application developed in Java using SQL as its database. The database connectivity is managed using JDBC API.
 
-## Folder Structure
+This application can be used by customers to place their orders.
+The aaplication also manages stock levels for the store employees.
 
-The workspace contains two folders by default, where:
+## Features
+The application does the following:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+* [✓] Ability for customer to login
+* [✓] Display all products available on stock
+* [✓] Add an item to an order
+* [✓] Notify  the customer when item is not on stock
+* [✓] Update the stock level of an item when an order is made
+* [✓] Display the number of items on order so far
+* [✓] Display total order cost for the customer.
+* [✓] End an order 
+* [✓] Exit app without making an order
+  
+## Database ERD diagram
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## App Screenshots
+Here's are screenshots of implemented features:
+<img src='screenshots\Screenshot(249).png' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
 
 ## Dependency Management
 
