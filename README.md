@@ -1,18 +1,64 @@
-## Getting Started
+## Ecommerce Order App
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Overview
+**Ecommerce Order App** is a Command Line-based Order Management System developed in Java, leveraging SQL for its database functionalities. It utilizes the JDBC API for database connectivity, ensuring efficient data management and operations.
 
-## Folder Structure
+This application can be used by customers to place their orders.
 
-The workspace contains two folders by default, where:
+The aplication also manages stock levels for the store employees.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Features
+The application does the following:
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+* [✓] User Authentication: Allows customers to log in using their email and password to access their accounts and manage orders.
+* [✓] Product Browsing: Enables customers to view all available products.
+* [✓] Order Management: Customers can add items to their orders, with real-time validation for product ID and stock availability.
+* [✓] Dynamic Order Summary: Displays the number of items in the current order and the total order cost, providing clarity to customers.
+* [✓] Stock Management: Automatically updates the stock levels upon order completion, maintaining accurate inventory records.
+* [✓] Application Exit: Offers the option to exit the app without placing an order, ensuring user flexibility.
+  
+## App Screenshots
+Here's are screenshots of implemented features:(each screenshot has description on top)
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Note the initial product quantity for product id 8 and 10, 8 is 300 while 10 is 85
 
-## Dependency Management
+<img src='screenshots/Screenshot (249).png' title='Video Walkthrough' width='400' height='300' alt='Video Walkthrough' />
+
+Sucessful login - check sql/query.sql file for customer Jessica Jones credentials, customer id is 6
+
+<img src='screenshots/Screenshot (250).png' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
+
+Jessica adds first item to order -  product 8 and orders 10 of them
+
+<img src='screenshots/Screenshot (251).png' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
+
+Jessica adds second item to order -  product 10 and orders 15 of them
+
+<img src='screenshots/Screenshot (252).png' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
+
+Jessica ends order and gets total order cost
+
+<img src='screenshots\Screenshot (253).png' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+On the order table, an order is created saving Jessica's total amount = 4349.75 and noting her customer id=6
+
+<img src='screenshots/Screenshot (254).png' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
+
+For each of the items ordered, they are added to the items table with respective ids and quantity(10 of product id 8, 15 of product id 10), order id from previous table is also saved (order id 9)
+
+<img src='screenshots/Screenshot (255).png' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
+
+The stock level of each product is updated, initially product id 8 was 300, Jessica bought 10, so now the stock is at 290
+
+Similarly product id 10 was 85, Jessica bought 15, so now the stock is at 70
+
+<img src='screenshots/Screenshot (256).png' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
+
+## Database ERD diagram
+
+## Dependencies
+* <a href="https://www.oracle.com/java/technologies/downloads/" target="_blank">Java Development Kit (JDK)</a>: Required to compile and run the Java application.
+* <a href="https://www.oracle.com/mysql/what-is-mysql/" target="_blank">MySQL Database</a>: Utilized for storing and managing customer, product, and order data.
+* <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/" target="_blank">JDBC</a>: Java Database Connectivity for database interactions.
 
 The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
