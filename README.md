@@ -20,12 +20,19 @@ The application does the following:
 * [✓] End an order 
 * [✓] Exit app without making an order
   
-## Database ERD diagram
-
 ## App Screenshots
 Here's are screenshots of implemented features:
-<img src='screenshots\Screenshot(249).png' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
+<img src='screenshots/Screenshot (249).png' title='Video Walkthrough' width='400' height='300' alt='Video Walkthrough' />
+<img src='screenshots/Screenshot (250).png' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
+<img src='screenshots/Screenshot (251).png' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
+<img src='screenshots/Screenshot (252).png' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
+<img src='screenshots\Screenshot (253).png' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='screenshots/Screenshot (254).png' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
+<img src='screenshots/Screenshot (255).png' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
+<img src='screenshots/Screenshot (256).png' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
+
+## Database ERD diagram
 
 ## Dependency Management
 
