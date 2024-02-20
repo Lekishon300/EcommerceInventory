@@ -24,14 +24,24 @@ Note the initial product quantity for product id 8 and 10, 8 is 300 while 10 is 
 
 <img src='screenshots/Screenshot (249).png' title='Video Walkthrough' width='400' height='300' alt='Video Walkthrough' />
 
-Sucessful login - check sql/query.sql file for customer Jessica Jones credentials
+Sucessful login - check sql/query.sql file for customer Jessica Jones credentials, customer id is 6
 
 <img src='screenshots/Screenshot (250).png' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
 
+Jessica adds first item to order -  product 8 and orders 10 of them
 
 <img src='screenshots/Screenshot (251).png' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
+
+Jessica adds second item to order -  product 10 and orders 15 of them
+
 <img src='screenshots/Screenshot (252).png' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
+
+Jessica ends order and gets total order cost
+
 <img src='screenshots\Screenshot (253).png' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+On the order table, an order is created saving Jessica's total amount = 4349.75 and noting her customer id=6
+
 <img src='screenshots/Screenshot (254).png' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
 <img src='screenshots/Screenshot (255).png' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
 <img src='screenshots/Screenshot (256).png' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
