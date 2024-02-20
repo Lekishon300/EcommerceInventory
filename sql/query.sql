@@ -1,5 +1,5 @@
 -- Active: 1707935170385@@34.135.143.148@3306@ecommerce
-INSERT INTO customers (customer_name, email, street_address, password) VALUES ('John Doe', 'johndoe@gmail.com', '123 Elm Street', 'apple123');
+INSERT INTO customers (customer_name, email, street_address, password) VALUES ('John Doe', 'janjohndoe@gmail.com', '123 Elm Street', 'apple123');
 INSERT INTO customers (customer_name, email, street_address, password) VALUES ('Jane Smith', 'janesmith@outlook.com', '456 Oak Avenue', 'banana456');
 INSERT INTO customers (customer_name, email, street_address, password) VALUES ('Michael Brown', 'michaelbrown@hotmail.com', '789 Pine Road', 'cherry789');
 INSERT INTO customers (customer_name, email, street_address, password) VALUES ('Emily Johnson', 'emilyjohnson@gmail.com', '101 Maple Lane', 'date101');

@@ -28,10 +28,10 @@ public class Order {
     public double calculateTotal() {
         double totalOrderAmount=0.00;
         for(OrderItem item : items){
-            System.out.println("Price: "+ item.getPrice());
-            System.out.println("Quantity: "+item.getQuantity());
+            //System.out.println("Price: "+ item.getPrice());
+            //System.out.println("Quantity: "+item.getQuantity());
             double ProductTotal= item.getPrice()*item.getQuantity();
-            System.out.println("ProductTotal: "+ProductTotal);
+            //System.out.println("For product id: " + item.getProductId()+ " Product Total is : "+ProductTotal);
             totalOrderAmount+=ProductTotal;
         }
         return totalOrderAmount;
