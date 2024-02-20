@@ -43,7 +43,15 @@ Jessica ends order and gets total order cost
 On the order table, an order is created saving Jessica's total amount = 4349.75 and noting her customer id=6
 
 <img src='screenshots/Screenshot (254).png' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
+
+For each of the items ordered, they are added to the items table with respective ids and quantity(10 of product id 8, 15 of product id 10), order id from previous table is also saved (order id 9)
+
 <img src='screenshots/Screenshot (255).png' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
+
+The stock level of each product is updated, initially product id 8 was 300, Jessica bought 10, so now the stock is at 290
+
+Similarly product id 10 was 85, Jessica bought 15, so now the stock is at 70
+
 <img src='screenshots/Screenshot (256).png' title='Video Walkthrough' width='400' height='400' alt='Video Walkthrough' />
 
 ## Database ERD diagram
