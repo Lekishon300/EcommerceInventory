@@ -10,15 +10,12 @@ The aaplication also manages stock levels for the store employees.
 ## Features
 The application does the following:
 
-* [✓] Ability for customer to login
-* [✓] Display all products available on stock
-* [✓] Add an item to an order
-* [✓] Notify  the customer when item is not on stock
-* [✓] Update the stock level of an item when an order is made
-* [✓] Display the number of items on order so far
-* [✓] Display total order cost for the customer.
-* [✓] End an order 
-* [✓] Exit app without making an order
+* [✓] User Authentication: Allows customers to log in using their email and password to access their accounts and manage orders.
+* [✓] Product Browsing: Enables customers to view all available products.
+* [✓] Order Management: Customers can add items to their orders, with real-time validation for product ID and stock availability.
+* [✓] Dynamic Order Summary: Displays the number of items in the current order and the total order cost, providing clarity to customers.
+* [✓] Stock Management: Automatically updates the stock levels upon order completion, maintaining accurate inventory records.
+* [✓] Application Exit: Offers the option to exit the app without placing an order, ensuring user flexibility.
   
 ## App Screenshots
 Here's are screenshots of implemented features:
