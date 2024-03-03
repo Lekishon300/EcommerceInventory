@@ -4,6 +4,21 @@ import main.CustomerManager;
 import main.ProductManager;
 import main.OrderItemManager;
 import main.OrderItem;
+/**
+ * The App class serves as the main entry point for a console-based store or e-commerce system application,
+ * facilitating user interactions for order management. It allows users to authenticate themselves using their
+ * email and password, view available products, add items to an order based on product ID and quantity, and 
+ * conclude their order by calculating the total amount due. The application integrates with CustomerManager,
+ * ProductManager, and OrderItemManager to manage customer information, product details, and order items 
+ * respectively.
+ * 
+ * The user flow involves:
+ * - Authenticating the user and creating a new order associated with their customer ID.
+ * - Displaying all available products.
+ * - Allowing the user to add products to their order by specifying product IDs and quantities, with validation checks for product existence and stock availability.
+ * - Completing the order process by showing the order total and thanking the user, updating the stock accordingly, and saving the order details to the database.
+ * - Providing options to either add more items, end the order, or exit the application.
+ */
 public class App {
    public static void main(String[] args) {
     Scanner sc= new Scanner(System.in);
