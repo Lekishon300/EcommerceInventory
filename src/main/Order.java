@@ -2,7 +2,13 @@ package main;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * Represents a customer's order, including customer ID, order ID, and a list of items.
+ * Offers functionality to add items to the order, calculate the total order amount,
+ * and manage order details. Supports two constructors for flexibility with or without
+ * an existing order ID. Useful for integrating order management with customer and
+ * product inventory systems.
+ */
 public class Order {
     private int orderId; 
     private int customerId;
@@ -28,8 +34,6 @@ public class Order {
     public double calculateTotal() {
         double totalOrderAmount=0.00;
         for(OrderItem item : items){
-            //System.out.println("Price: "+ item.getPrice());
-            //System.out.println("Quantity: "+item.getQuantity());
             double ProductTotal= item.getPrice()*item.getQuantity();
             //System.out.println("For product id: " + item.getProductId()+ " Product Total is : "+ProductTotal);
             totalOrderAmount+=ProductTotal;
