@@ -9,8 +9,8 @@ import main.ProductManager;
 public class CustomerManager{
 /**
  * Retrieves the customer ID from the database based on the provided email and password.
- * @param email    the email address of the customer 
- * @param password the password of the customer
+ * @param email    the email address of the customer as a String.
+ * @param password the password of the customer as a String.
  * @return         the customer ID as an integer if found, or -1 if not found or if there's an error.
  * @throws SQLException if there is a problem accessing the database or executing the query.
  */
