@@ -6,10 +6,21 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+/**
+ * Manages order item operations, including validating product IDs and quantities,
+ * and saving orders and order items to the database. Provides methods to check the
+ * availability of requested products and to persist order details, ensuring product
+ * quantities are sufficient and order information is accurately recorded.
+ */
 public class OrderItemManager {
-  //Connection con = null;
-  
-  // must check that the id is valid, check quantity too
+/**
+ * Checks if the specified product ID is valid and if the requested quantity is available.
+ *
+ * @param product_Id    the ID of the product to check.
+ * @param item_Quantity the quantity of the product requested.
+ * @param customer_Id   the ID of the customer making the request.
+ * @return              true if the product ID is valid and the requested quantity is available; false otherwise.
+ */
   public static boolean IDQtIsValid(int product_Id,int item_Quantity,int customer_Id){
     boolean isValid=false;
     Connection con = null;
@@ -46,7 +57,15 @@ public class OrderItemManager {
     }
     return isValid;
   }
- //saves order to the order table and items to item table, basically saves orders to db
+/**
+ * Saves an order to the database. This method first inserts the order into the orders table,
+ * including the customer ID and the total order amount, and retrieves the generated order ID.
+ * It then iterates through each item in the order, inserting them into the order_items table
+ * with the newly obtained order ID, product ID, and item quantity.
+ * 
+ * @param customer_Id the ID of the customer placing the order.
+ * @param order       the Order object containing the order details to be saved.
+ */
   public static void saveOrder(int customer_Id,Order order ){
     Connection con = null;
     try {
