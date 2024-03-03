@@ -7,7 +7,13 @@ import main.DatabaseConnection;
 import java.sql.Connection;
 import main.ProductManager;
 public class CustomerManager{
-
+/**
+ * Retrieves the customer ID from the database based on the provided email and password.
+ * @param email    the email address of the customer as a {@link String}.
+ * @param password the password of the customer as a {@link String}.
+ * @return         the customer ID as an integer if found, or -1 if not found or if there's an error.
+ * @throws SQLException if there is a problem accessing the database or executing the query.
+ */
 
   public static int getCustomerId(String email, String password)throws SQLException{
     Connection con = null;
