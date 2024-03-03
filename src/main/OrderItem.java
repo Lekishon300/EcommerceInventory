@@ -1,5 +1,10 @@
 package main;
-
+/**
+ * Represents an item within an order, encapsulating product and item identifiers, quantity, and price.
+ * Supports initialization with product ID, optional item ID for further identification, quantity of the product, 
+ * and the price of the item. Provides getters and setters for manipulating item properties, facilitating detailed 
+ * order item management in the e-commerce system.
+ */
 public class OrderItem {
   private int productId;
   private int itemId;
