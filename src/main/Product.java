@@ -1,5 +1,10 @@
 package main;
-
+/**
+ * Represents a product in the order system, encapsulating product details
+ * such as ID, name, description, price, and available stock quantity. Provides
+ * constructors for initializing product objects and getters/setters for managing
+ * product attributes, enabling easy access and modification of product information.
+ */
 public class Product {
   private int productId;
   private String name;
