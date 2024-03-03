@@ -7,6 +7,12 @@ import java.sql.SQLException;
 import main.Product;
 
 public class ProductManager {
+/**
+ * Retrieves all products from the database and prints their details.
+ * Establishes a connection to the database, executes a SQL query to fetch all product records,
+ * and prints each product's ID, name, and quantity. It handles SQL exceptions and prints error messages
+ * if unable to connect to the database or execute the query.
+ */
   public static void getAllProducts(){
     Connection con = null;
     try{
@@ -35,6 +41,13 @@ public class ProductManager {
     s.printStackTrace();
     }
   }
+/**
+ * Fetches the price of a specific product by its product ID.
+ *
+ * @param productId the ID of the product to fetch the price for.
+ * @return the price of the product as a double, or 0.0 if not found.
+ * @throws Exception if there is a problem accessing the database.
+ */
   public static double fetchProductPrice(int productId) throws Exception{
     double price = 0.0;
     try (Connection con = DatabaseConnection.getConnection();
@@ -50,6 +63,15 @@ public class ProductManager {
     }
     return price;
 }
+ /**
+ * Retrieves a Product object by its ID.
+ * Connects to the database, prepares and executes a SQL query to fetch product details,
+ * and if found, constructs and returns a Product object with these details. Catches and logs
+ * SQLExceptions and returns null if the product is not found or an error occurs.
+ *
+ * @param productId the ID of the product to retrieve.
+ * @return a Product object with the product's details, or null if not found.
+ */
 public static Product getProductById(int productId) {
   Product product = null;
   try (Connection con = DatabaseConnection.getConnection();
@@ -75,8 +97,15 @@ public static Product getProductById(int productId) {
    }  
   return product;
   }
-//update stock
-//take the order, for each order item take note of id and quantity, subtract quantity from database
+/**
+ * Updates the stock quantity of products based on an Order object.
+ * Iterates through each OrderItem in the order, queries the current stock quantity for each product,
+ * calculates the new quantity, and updates the product's stock in the database. Handles SQLExceptions
+ * and ensures stock quantities are only updated in the application after successful database updates.
+ *
+ * @param order the Order object containing the items to update stock for.
+ * @throws Exception if there is a problem accessing the database or updating stock quantities.
+ */
 public static void updateStock(Order order) throws Exception{
   try (Connection con = DatabaseConnection.getConnection();){
     for (OrderItem item: order.getItems()){
